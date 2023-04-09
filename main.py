@@ -11,7 +11,7 @@ def checkEmail(email):
     # Check using Regex that an email meets minimum requirements, throw an error if not
     match = re.match('^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$', email)
 
-    if match == None and not email.__contains__('85thDermPCs@mountsinai.org'):
+    if match == None:
         # print('Type: '+str(type(email)))
         print('Bad Syntax in ' + email)
         raise ValueError('Bad Syntax')
