@@ -12,7 +12,6 @@ def checkEmail(email):
     match = re.match('^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$', email)
 
     if match == None:
-        # print('Type: '+str(type(email)))
         print('Bad Syntax in ' + email)
         raise ValueError('Bad Syntax')
 
